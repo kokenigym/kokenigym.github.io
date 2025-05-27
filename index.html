@@ -72,6 +72,20 @@
     ul li {
       margin-bottom: 0.5rem;
     }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+    .carousel iframe {
+      min-width: 300px;
+      max-width: 300px;
+      scroll-snap-align: center;
+      border: none;
+      border-radius: 12px;
+    }
     .social-links {
       text-align: center;
       margin-top: 2rem;
@@ -85,10 +99,6 @@
     }
     .social-links a:hover {
       text-decoration: underline;
-    }
-    .instagram-embed {
-      margin-top: 2rem;
-      text-align: center;
     }
     footer {
       text-align: center;
@@ -114,9 +124,13 @@
       <li><strong>유아 체육:</strong> 놀이형 수업을 통해 자연스러운 신체 발달</li>
       <li><strong>초등 체육:</strong> 기초 체력 및 운동 능력 향상 중심</li>
     </ul>
-  </section>  <section class="instagram-embed">
+  </section>  <section>
     <h2>수업 영상</h2>
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DHFgBPyyTwc/" data-instgrm-version="14" style="margin: auto;"></blockquote>
+    <div class="carousel">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DHFgBPyyTwc/" data-instgrm-version="14"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DHFgBPyyTwc/" data-instgrm-version="14"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DHFgBPyyTwc/" data-instgrm-version="14"></blockquote>
+    </div>
   </section>  <section>
     <h2>공지 및 소식</h2>
     <p><a href="http://pf.kakao.com/_xeeAsn" target="_blank">코크니짐 카카오 채널 바로가기</a></p>
