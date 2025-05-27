@@ -118,11 +118,40 @@
     <p><strong>주소:</strong> 서울 양천구 목동중앙본로 71 2층</p>
     <p><a href="https://naver.me/x67c2o2f" target="_blank">네이버 지도 보기</a></p>
   </section>  <section>
-    <h2>프로그램 안내</h2>
-    <ul>
-      <li><strong>유아 체육:</strong> 놀이형 수업을 통해 자연스러운 신체 발달</li>
-      <li><strong>초등 체육:</strong> 기초 체력 및 운동 능력 향상 중심</li>
-    </ul>
+      <h2>프로그램 안내</h2>
+  <ul>
+    <li><strong>유아 체육:</strong> 놀이형 수업을 통해 자연스러운 신체 발달</li>
+    <li><strong>초등 체육:</strong> 기초 체력 및 운동 능력 향상 중심</li>
+  </ul>
+
+  <button onclick="toggleTimetable()" style="margin-top:1rem; padding:0.5rem 1rem; background:#00c2a0; color:white; border:none; border-radius:6px; cursor:pointer;">
+    시간표 열기 / 닫기
+  </button>
+
+  <div id="timetable" style="display:none; margin-top:1rem;">
+    <table style="width:100%; border-collapse: collapse; font-size: 0.75rem; table-layout: fixed;">
+      <thead>
+        <tr style="background:#00c2a0; color:white;">
+          <th>시간</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>13:00 - 14:00</td><td>초등부</td><td>초등부</td><td>초등부</td><td>초등부</td><td>초등부</td></tr>
+        <tr><td>14:30 - 15:30</td><td>유치/초등</td><td>유치/초등</td><td>유치/초등</td><td style="background:#e8f5e9">초등 1,2학년</td><td rowspan="3" style="background:#e1f5fe">코크니 선생님<br>출장!</td></tr>
+        <tr><td>16:00 - 17:00</td><td style="background:#fce4ec">유치부 5세</td><td>유치부</td><td style="background:#fff9c4">유치부 7세</td><td>유치부</td></tr>
+        <tr><td>17:30 - 18:30</td><td>초등부</td><td>초등부</td><td style="background:#fce4ec">유치부 5세</td><td style="background:#e8f5e9">초등 1,2학년</td></tr>
+        <tr><td>19:00 - 20:00</td><td>초등부</td><td>초등부</td><td>초등부</td><td>초등부</td><td>초등부</td></tr>
+        <tr><td>20:30 - 21:30</td><td>초등부</td><td>초등부</td><td>초등부</td><td>초등부</td><td>초등부</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    function toggleTimetable() {
+      const table = document.getElementById('timetable');
+      table.style.display = table.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
   </section>  <section>
     <h2>수업 영상</h2>
     <div class="carousel">
